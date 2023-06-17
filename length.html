@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+    <meta name="description" content="A conversion tool builtwith Javascript">
+    <meta name="author" content="Joeri Smissaert">
+    <title>Conversion Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!--  Navigation  -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="./length.html"> Mohith Rani</a>
+        <div class="navbar-expand" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--  Page Content  -->
+    <section>
+        <div class="jumbotron jumbotron-fluid pd-1">
+            <div class="container.fluid">
+                <h1 class="display-5">Conversion Tool</h1>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="main" class="container justify-content-center text-center">
+
+            <!--  input field  -->
+            <div class="row justify-content-center">
+                <form>
+                    <div class="form-group mb-3">
+                        <input id="input" type="number" class="form-control form-control-lg text-center" placeholder="Enter Value">
+                    </div>
+                </form>
+            </div>
+
+            <div class="row">
+                <!--  Start Length Converter  -->
+                <div id="length" class="col ">
+                    <h1 class="display-5 text-center">Length</h1>
+                    <div class="btn-group btn-group-lg mb-2" role="group" arial-label="Length Units">
+                        <button type="button" class="btn btn-secondary btn-group-length">Mm</button>
+                        <button type="button" class="btn btn-secondary btn-group-length">Cm</button>
+                        <button type="button" class="btn btn-secondary btn-group-length">In</button>
+                        <button type="button" class="btn btn-secondary btn-group-length">Ft</button>
+                        <button type="button" class="btn btn-secondary btn-group-length">M</button>
+                    </div>
+
+                    <div id="output-length" class="ouput hidden">
+                        <div class="card bg-primary text-white mb-3 text-center">
+                            <div class="card-block m-2">
+                                <h4>Millimeters:</h4>
+                                <div id="mmOutput">0</div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-secondary text-white mb-3 text-center">
+                            <div class="card-block m-2">
+                                <h4>Centimeters:</h4>
+                                <div id="cmOutput">0</div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-success text-white mb-3 text-center">
+                            <div class="card-block m-2">
+                                <h4>Inches:</h4>
+                                <div id="InOutput">0</div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-info text-white mb-3 text-center">
+                            <div class="card-block m-2">
+                                <h4>Feet:</h4>
+                                <div id="ftOutput">0</div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-dark text-white mb-3 text-center">
+                            <div class="card-block m-2">
+                                <h4>Meters:</h4>
+                                <div id="mOutput">0</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End Length Converter  -->
+            </div>
+         </div>
+   </section>
+   
+   <script src="len.js" type="text/Javascript"></script>
+</body>
+</html>
