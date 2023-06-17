@@ -106,7 +106,7 @@ function convertFt(){
     }
 }
 
-function convertFt(){
+function convertM(){
     let input = inputField.value;
 
     if(!input){
